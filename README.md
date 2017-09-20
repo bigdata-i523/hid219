@@ -8,8 +8,8 @@
 
 ```
 owner:
-    hid: 000
-    name: Gregor von Laszewski
+    hid: 219
+    name: Parampali Sreenath, Syam Sundar Herle
     url: https://github.com/bigdata-i523/sample-hid000
 ```
 
