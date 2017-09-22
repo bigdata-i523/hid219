@@ -23,7 +23,7 @@ paper1:
    - 219
    title: Big Data Analytics Architecture for Real-Time Traffic Control 
    abstract: This paper proposes a comprehensive and flexible architecture based on distributed computing platform for real-time traffic control.
-   url: TBA
+   url: TBD
 ```
    
 # Paper 2
@@ -34,9 +34,9 @@ paper2:
    - Parampali Sreenath, Syam Sundar Herle
    hid:
    - 219
-   title: This is my paper about the other abc
-   abstract: This paper showcases tis and that and the other in regards to abc
-   url: TBA
+   title: Yet to be decided
+   abstract: TBD
+   url: TBD
 ```
 
 # Project 
