@@ -18,14 +18,12 @@ owner:
 ```
 paper1:
    author: 
-   - Gregor von Laszewski
-   - Fugang Wang
+   - Parampali Sreenath, Syam Sundar Herle
    hid:
-   - 000
-   - 001
-   title: This is my paper about xyz
-   abstract: This paper showcases tis and that and the other
-   url: https://github.com/bigdata-i523/sample-hid000/paper1/paper1.pdf
+   - 219
+   title: Big Data Analytics Architecture for Real-Time Traffic Control 
+   abstract: This paper proposes a comprehensive and flexible architecture based on distributed computing platform for real-time traffic control.
+   url: TBA
 ```
    
 # Paper 2
