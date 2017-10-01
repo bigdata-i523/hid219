@@ -22,8 +22,12 @@ paper1:
    hid:
    - 219
    title: Big Data Analytics Architecture for Real-Time Traffic Control 
-   abstract: This paper proposes a comprehensive and flexible architecture based on distributed computing platform for real-time traffic control.
+   abstract: >
+       This paper proposes a comprehensive and flexible architecture
+       based on distributed computing platform for real-time traffic
+       control. 
    url: TBD
+   chapter: Transport
 ```
    
 # Paper 2
