@@ -27,6 +27,7 @@ paper1:
        based on distributed computing platform for real-time traffic
        control. 
    url: TBD
+   type: latex
    chapter: Transportation
 ```
    
