@@ -26,7 +26,7 @@ paper1:
        This paper proposes a comprehensive and flexible architecture
        based on distributed computing platform for real-time traffic
        control. 
-   url: TBD
+   url: https://github.com/bigdata-i523/hid219/blob/master/paper1/report.pdf
    type: latex
    chapter: Transportation
 ```
