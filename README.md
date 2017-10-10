@@ -9,26 +9,24 @@
 ```
 owner:
     hid: 219
-    name: Parampali Sreenath, Syam Sundar Herle
-    url: https://github.com/bigdata-i523/hid219
+    name: "Parampali Sreenath, Syam Sundar Herle"
+    url: "https://github.com/bigdata-i523/hid219"
 ```
 
 # Paper 1
 
 ```
 paper1:
-   author: 
-   - Parampali Sreenath, Syam Sundar Herle
-   hid:
-   - 219
-   title: Big Data Analytics Architecture for Real-Time Traffic Control 
-   abstract: >
+   author: Parampali Sreenath, Syam Sundar Herle
+   hid: 219
+   title: "Big Data Analytics Architecture for Real-Time Traffic Control." 
+   abstract: 
        This paper proposes a comprehensive and flexible architecture
        based on distributed computing platform for real-time traffic
        control. 
    url: https://github.com/bigdata-i523/hid219/blob/master/paper1/report.pdf
    type: latex
-   status: Completed
+   status: 100%
    chapter: Transportation
 ```
    
