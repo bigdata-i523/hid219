@@ -14,7 +14,7 @@ paper1:
    author: Syam Sundar Herle Parampali Sreenath
    hid: 219
    title: "Big Data Analytics Architecture for Real-Time Traffic Control." 
-   abstract:> 
+   abstract: >
        This paper proposes a comprehensive and flexible architecture
        based on distributed computing platform for real-time traffic
        control. 
