@@ -11,8 +11,10 @@ owner:
 
 ```
 paper1:
-   author: Syam Sundar Herle Parampali Sreenath
-   hid: 219
+   author:
+   - Syam Sundar Herle Parampali Sreenath
+   hid:
+   - 219
    title: "Big Data Analytics Architecture for Real-Time Traffic Control." 
    abstract: >
        This paper proposes a comprehensive and flexible architecture
