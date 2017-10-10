@@ -29,7 +29,7 @@ paper1:
 ```
 paper2:
    author: 
-   - Parampali Sreenath, Syam Sundar Herle
+   - Syam Sundar Herle Parampali Sreenath
    hid:
    - 219
    title: Yet to be decided
