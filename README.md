@@ -3,8 +3,8 @@
 ```
 owner:
     hid: 219
-    name: "Parampali Sreenath, Syam Sundar Herle"
-    url: "https://github.com/bigdata-i523/hid219"
+    name: Parampali Sreenath, Syam Sundar Herle
+    url: https://github.com/bigdata-i523/hid219
 ```
 
 # Paper 1
