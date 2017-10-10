@@ -3,7 +3,7 @@
 ```
 owner:
     hid: 219
-    name: Parampali Sreenath, Syam Sundar Herle
+    name: Syam Sundar Herle Parampali Sreenath 
     url: https://github.com/bigdata-i523/hid219
 ```
 
