@@ -20,7 +20,7 @@ paper1:
        control. 
    url: https://github.com/bigdata-i523/hid219/blob/master/paper1/report.pdf
    type: latex
-   status: 100%
+   status: 33%
    chapter: Transportation
 ```
    
