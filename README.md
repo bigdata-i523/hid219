@@ -1,9 +1,3 @@
-# hid219
-# Comments
-
-* Mind the ```quotes and do not forget them```
-* Remove all sections that you have not yet created a directory in github with so our automated scripts do not fail. Only add them if the 
-
 # Owner
 
 ```
@@ -20,7 +14,7 @@ paper1:
    author: Parampali Sreenath, Syam Sundar Herle
    hid: 219
    title: "Big Data Analytics Architecture for Real-Time Traffic Control." 
-   abstract: 
+   abstract:> 
        This paper proposes a comprehensive and flexible architecture
        based on distributed computing platform for real-time traffic
        control. 
