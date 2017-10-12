@@ -15,15 +15,13 @@ paper1:
    - Syam Sundar Herle Parampali Sreenath
    hid:
    - 219
-   title: "Big Data Analytics Architecture for Real-Time Traffic Control." 
+   title: "TBD"
    abstract: >
-       This paper proposes a comprehensive and flexible architecture
-       based on distributed computing platform for real-time traffic
-       control. 
+       TBD
    url: https://github.com/bigdata-i523/hid219/blob/master/paper1/report.pdf
    type: latex
-   status: 33%
-   chapter: Transportation
+   status: 0%
+   chapter: TBD
 ```
    
 # Paper 2
@@ -34,7 +32,7 @@ paper2:
    - Syam Sundar Herle Parampali Sreenath
    hid:
    - 219
-   title: Yet to be decided
+   title: TBD
    abstract: TBD
    url: TBD
 ```
