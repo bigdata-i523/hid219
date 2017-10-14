@@ -15,10 +15,10 @@ paper1:
    - Syam Sundar Herle Parampali Sreenath
    hid:
    - 219
-   title: "TBD"
+   title: "Big Data and Computer Vision"
    abstract: >
        TBD
-   url: https://github.com/bigdata-i523/hid219/blob/master/paper1/report.pdf
+   url: TBD
    type: latex
    status: 0%
    chapter: TBD
