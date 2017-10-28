@@ -23,3 +23,23 @@ paper2:
     title: Benchmarking a BigData Docker deployment
     type: report
     url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
+project:
+    title: Fake Review Detection On Yelp Dataset.
+    author: 
+        - Syam Sundar Herle Parampali Sreenath
+    hid:
+        - 219
+    Abstract:>
+            Yelp allows user to give personal opinion about the restaurant, based on thier services. 
+            There are possibility of giving fake reviews on yelp, which creates deceptive information. 
+            The main goal of this project is to create a predictive model which identifies these fake reviews.
+    Dataset:
+        - Yelp dataset, size is 2gb
+    Analytics:
+        - Spark for machine learning packages 
+        - Hadoop for storage
+    Application:
+        - Prediction model
+    Type:
+        - Hardcore programming     
+      
