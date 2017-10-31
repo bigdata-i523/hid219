@@ -14,10 +14,10 @@ Place the filename.txt and exclude-words.txt in the same directory of the wordco
 
 ### Word Cloud output ###
 
-![fed_words_output] https://github.com/bigdata-i523/hid219/blob/master/additional/experiments/wordcount/wordcloud.png
+![fed_words_output](https://github.com/bigdata-i523/hid219/blob/master/additional/experiments/wordcount/wordcloud.png)
 
 ### Bar plot for random word frequency ###
 
-![fed_words_output] https://github.com/bigdata-i523/hid219/blob/master/additional/experiments/wordcount/bar_plot.png
+![fed_words_output](https://github.com/bigdata-i523/hid219/blob/master/additional/experiments/wordcount/bar_plot.png)
 
 
