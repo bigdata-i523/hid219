@@ -40,6 +40,7 @@ simple:
 
 
 check:
+	@pip install pyPdf
 	@wget -q https://raw.githubusercontent.com/bigdata-i523/sample-hid000/master/paper1/check.py -O check.py
 	@python check.py
 
