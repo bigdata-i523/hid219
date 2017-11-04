@@ -1,31 +1,25 @@
 \documentclass[sigconf]{acmart}
 
-\input{format/i523}
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\pagestyle{plain}
 
+\usepackage{dirtytalk}
 
 \begin{document}
-
-\title{TBD}
- 
- \author{Syam Sundar Herle}
- 
- %Not sure what it is 
- \orcid{1234-5678-9012}
- 
- \affiliation{%
-   \institution{School of Informatics and Computing, IN 47408,
-   U.S.A.}
-   \streetaddress{P.O. Box 1212}
-   \city{Bloomington} 
-   \state{Indiana} 
-   \postcode{47408}
- }
- \email{syampara@umail.iu.edu}
- 
- 
- \date{October 2017}
+\title{Big Data and Transportation}
 
 
+\author{Syam Sundar Herle}
+\orcid{HID219}
+\affiliation{%
+  \institution{Indiana University}
+  \streetaddress{711 N Park Ave}
+  \city{Bloomington} 
+  \state{Indiana} 
+  \postcode{47408}
+}
+\email{syampara@iu.edu}
 
 \begin{abstract}
 
@@ -39,7 +33,7 @@ With the rise of population in cities, commutation by road or rail have become h
 
 \section{Introduction}
 
-In modern era, technologies plays a major role in our day to day life changing the way of our interaction and livelihood. Smart-phones have become unsaid finger for our hand and internet have pushed communication to next level. The revolution made by technologies and internet have resulted in collection of large real-time data. Real-time data coming from transport camera's, mobile devices, social media's and other sources need to be dealt to provide easy decision making system for commuter in order to set a effective transportation system. According to \cite{} ``the volume and speed at which data are generated, processed and stored is unprecedented''. Said that, Big data is all about realizing full potential and revealing hidden patterns of large data set by acquiring, storing and managing by advanced technologies and optimizing techniques. 
+In modern era, technologies plays a major role in our day to day life changing the way of our interaction and livelihood. Smart-phones have become unsaid finger for our hand and internet have pushed communication to next level. The revolution made by technologies and internet have resulted in collection of large real-time data. Real-time data coming from transport camera's, mobile devices, social media's and other sources need to be dealt to provide easy decision making system for commuter in order to set a effective transportation system. According to \cite{} \say{the volume and speed at which data are generated, processed and stored is unprecedented}. Said that, Big data is all about realizing full potential and revealing hidden patterns of large data set by acquiring, storing and managing by advanced technologies and optimizing techniques. 
 
 The overwhelming real-time data collected from mobile devices and social media like Facebook, Twitter while travelling contains not only the location based information of the users but also the nature of traffic in hidden manner. These real-time data collected from social media applications and traffic camera can be used to predict the nature of road ahead, optimized route, traffic forecasting and predict them before they occur for the public by Intelligent Transportation system(ITS)\cite{}. The nature of the data are in diverse manner ranging from structured to unstructured, as these are in real-time the consumed data size would be in terabytes. Because of the huge amount of big data and its nature there is a urgent need of addressing the issues like storing, managing and analyzing which are beyond the capacity of the traditional tools which are used for analysis.
 
@@ -82,16 +76,35 @@ The above issues highlights specifically the situation of the road congestion an
 
 \section{Big Data}
 
-As defined earlier, Big data is all about realizing full potential and revealing hidden patterns of large data set by acquiring, storing and managing by advanced technologies and optimizing techniques.
+As defined earlier, Big data is all about realizing full potential and revealing hidden patterns of large data set by acquiring, storing and managing by advanced technologies and optimizing techniques. According to \cite{} Big Data has also been defined as by the four V's:
+
+\begin{enumerate}
+\item Volume
+
+The mass of amount of the data, which indicates to the data in low level. Lot's of data collected from social media platform are variety and huge amount in nature, which consists of structured and unstructured. Looking up the unstructured data will be futile and we cannot mine any useful information from the raw unstructured data. Advance technologies like Hadoop, Map Reduce needs to employed to manage storage and mine the unstructured data.
+
+\item Velocity
+
+This can be defined by the rate of pace at which the data are accumulated. In some real-time applications like Internet of Things (IoT) related to health care systems and transportation systems there is a need to evaluate real-time data. Instead of writing high streams of data we need to store it directly to memory to evaluate them. 
+\item Variety
+
+Usually variety can be defined as mixture, when coming to data there will be structured, semi-structured and unstructured. Data like text, audio and video will be unstructured in nature, we need to process to make the unstructured data meaningful and we need to tag the data in same format of the structured data and apply the same techniques which are applied on the structured data. In the case of real time data some of the structured data may change to unstructured or semi-structured without notice.
+
+\item Value
+
+All data has hidden value, which must be revealed by employing range of technique's depending on the nature of value of the data. The technique's employed usually vary from the quantitative and investigative to discover the real value of the data ranging from expression of the consumers to financial status of the consumers.
 
 
-TBD \cite{wwwbigdata} 
 
-\section*{Acknowledgements}
 
-This work was done as part of the course {\em I523: Big Data Applications and Analytic} at Indiana University during Spring 2017. Many thanks to Professor Gregor von Laszewski at Indiana University Bloomington for their academic as well as professional guidance. We would also like to thank Associate Instructors for their help and support during the course. 
+\end{enumerate}
 
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{report.bib}
+
+\section{Big Data Technology for Transportation}
+
+
+
+
+
 
 \end{document}
