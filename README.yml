@@ -16,6 +16,7 @@ paper1:
     type: latex
     url: TBD
 paper2:
+    review: Nov 6 2017
     abstract: This paper showcases tis and that and the other
     author:
         - Gregor von Laszewski
