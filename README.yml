@@ -4,17 +4,19 @@ owner:
     name: Syam Sundar Herle Parampali Sreenath
     url: https://github.com/bigdata-i523/hid219
 paper1:
-    abstract: 'TBD'
+    title: Big Data and Transportation
+    abstract: >
+    "With the rise of population in cities, commutation by road or rail have become hard for people.Transit plays major role in public and private day to day life, but there are limited number of system to address the transportation issues. On other hand Big Data have proved to be more effective and helpful in most of the sectors and business. Big data is all about realizing full potential of large data set by acquiring, storing and managing by advanced technologies and optimizing techniques. With the help of new era of technologies like internet, social media, traffic camera,feeds and smart-phones one can have access to more real-time data which contains abundant of information, which can be used in transportation sector. We can use advance Big Data technologies like Spark on those real-time data set to address transportation issues to build next level Intelligent Transportation Systems (ITS)."
     author:
         - Syam Sundar Herle Parampali Sreenath
-    chapter: TBD
+    chapter: Transportation
     hid:
         - 219
-    status: 0% 
-    review data: 11/05/2017
+    status: 100% 
+    review: 11/05/2017
     title: Big Data and Computer Vision
     type: latex
-    url: TBD
+    url: 'https://github.com/bigdata-i523/hid219/blob/master/paper1/report.pdf'
 paper2:
     review: Nov 6 2017
     abstract: This paper showcases tis and that and the other
