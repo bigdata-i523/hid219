@@ -1,0 +1,28 @@
+	[2017-11-08 20.23.59] pdflatex report.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex)
+p.1   L30   : [bdtrans] undefined
+p.1   L32   : [its] undefined
+p.1   L37   : [bigdata] undefined
+p.1   L41   : [mapreduce] undefined
+p.1   L41   : [hadoop] undefined
+p.2   L69   : [bigdata] undefined
+p.2   L69   : [bigdata] undefined
+p.2   L73   : [bigdata] undefined
+p.2   L73   : [bigdata] undefined
+p.2   L77   : [bigdata] undefined
+p.2   L86   : [ivr] undefined
+p.2   L86   : [bigdata] undefined
+p.2   L86   : [bigdata] undefined
+p.2   L86   : [bigdata] undefined
+p.2   L98   : [bigdata] undefined
+p.2   L102  : [bigdata] undefined
+p.2   L112  : [trans] undefined
+p.3   L154  : [bdlt] undefined
+p.3   L158  : [bdlt] undefined
+p.3   L162  : [bdlt] undefined
+p.3   L166  : [bdlt] undefined
+There were undefined citations.
+Citation(s) may have changed. Rerun to get citations correct.
+File `report.out' has changed. Rerun to get outlines right or use package `bookmark'.
+Label(s) may have changed. Rerun to get cross-references right.
+Typesetting of "report.tex" completed in 0.6s.

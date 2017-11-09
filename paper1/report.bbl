@@ -1,0 +1,137 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Analytic}{Analytic}{2017}]%
+        {mapreduce}
+\bibfield{author}{\bibinfo{person}{IBM Analytic}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{Map Reduce}.
+\newblock   (\bibinfo{year}{2017}).
+\newblock
+\showURL{%
+\url{https://www.ibm.com/analytics/us/en/technology/hadoop/mapreduce/}}
+
+
+\bibitem[\protect\citeauthoryear{Ayed, Halima, and Alimi}{Ayed
+  et~al\mbox{.}}{2015}]%
+        {bdlt}
+\bibfield{author}{\bibinfo{person}{A.~Ben Ayed}, \bibinfo{person}{M.~Ben
+  Halima}, {and} \bibinfo{person}{A.~M. Alimi}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Big data analytics for logistics and
+  transportation}. In \bibinfo{booktitle}{{\em 2015 4th International
+  Conference on Advanced Logistics and Transport (ICALT)}}.
+  \bibinfo{publisher}{IEEE}, \bibinfo{address}{IEEE JOURNAL},
+  \bibinfo{pages}{311--316}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1109/ICAdLT.2015.7136630}}
+
+
+\bibitem[\protect\citeauthoryear{Biuk-Aghai, Kou, and Fong}{Biuk-Aghai
+  et~al\mbox{.}}{2016}]%
+        {trans}
+\bibfield{author}{\bibinfo{person}{R.~P. Biuk-Aghai}, \bibinfo{person}{W.~T.
+  Kou}, {and} \bibinfo{person}{S. Fong}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Big data analytics for transportation: Problems and
+  prospects for its application in China}. In \bibinfo{booktitle}{{\em 2016
+  IEEE Region 10 Symposium (TENSYMP)}}. \bibinfo{publisher}{IEEE},
+  \bibinfo{address}{IEEE JOURNAL}, \bibinfo{pages}{173--178}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1109/TENCONSpring.2016.7519399}}
+
+
+\bibitem[\protect\citeauthoryear{Data, Understanding, and assessing
+  options}{Data et~al\mbox{.}}{2015}]%
+        {bdtrans}
+\bibfield{author}{\bibinfo{person}{Big Data}, \bibinfo{person}{Transport:
+  Understanding}, {and} \bibinfo{person}{assessing options}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{title}{OECD/ITF}.
+\newblock   (\bibinfo{year}{2015}).
+\newblock
+\showURL{%
+\url{https://www.itf-oecd.org/sites/default/files/docs/15cpb_bigdata_0.pdf}}
+\newblock
+\shownote{Accessed:30-Mar-2017.}
+
+
+\bibitem[\protect\citeauthoryear{of~Transportation}{of~Transportation}{2017}]%
+        {its}
+\bibfield{author}{\bibinfo{person}{United States~Department of
+  Transportation}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{Intelligent Transportation System}.
+\newblock   (\bibinfo{year}{2017}).
+\newblock
+\showURL{%
+\url{https://www.its.dot.gov/}}
+
+
+\bibitem[\protect\citeauthoryear{Oracle}{Oracle}{2017}]%
+        {bigdata}
+\bibfield{author}{\bibinfo{person}{Oracle}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{Big Data}.
+\newblock   (\bibinfo{year}{2017}).
+\newblock
+\showURL{%
+\url{https://www.oracle.com/big-data/index.html}}
+
+
+\bibitem[\protect\citeauthoryear{Qubole}{Qubole}{2017}]%
+        {ivr}
+\bibfield{author}{\bibinfo{person}{Qubole}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{Big Data and Customer Service}.
+\newblock   (\bibinfo{year}{2017}).
+\newblock
+\showURL{%
+\url{https://www.qubole.com/blog/call-center-analytics/}}
+
+
+\bibitem[\protect\citeauthoryear{SAS}{SAS}{2017}]%
+        {hadoop}
+\bibfield{author}{\bibinfo{person}{SAS}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \bibinfo{title}{Hadoop}.
+\newblock   (\bibinfo{year}{2017}).
+\newblock
+\showURL{%
+\url{https://www.sas.com/en_us/insights/big-data/hadoop.html}}
+
+
+\end{thebibliography}

@@ -1,17 +1,6 @@
 \documentclass[sigconf]{acmart}
 
-\settopmatter{printacmref=false}
-
-\renewcommand\footnotetextcopyrightpermission[1]{}
-
-\pagestyle{plain}
-
-\usepackage{dirtytalk}
-
-\usepackage{graphicx}
-
-\graphicspath{ {images/} }
-
+\input{format/i523}
 
 \begin{document}
 \title{Big Data and Transportation}
@@ -38,7 +27,7 @@ With the rise of population in cities, commutation by road or rail have become h
 
 \section{Introduction}
 
-In modern era, technologies plays a major role in our day to day life changing the way of our interaction and livelihood. Smart-phones have become unsaid finger for our hand and internet have pushed communication to next level. The revolution made by technologies and internet have resulted in collection of large real-time data. Real-time data coming from transport camera's, mobile devices, social media's and other sources need to be dealt to provide easy decision making system for commuter in order to set a effective transportation system. According to \cite{bdtrans} \say{the volume and speed at which data are generated, processed and stored is unprecedented}. Said that, Big data is all about realizing full potential and revealing hidden patterns of large data set by acquiring, storing and managing by advanced technologies and optimizing techniques. 
+In modern era, technologies plays a major role in our day to day life changing the way of our interaction and livelihood. Smart-phones have become unsaid finger for our hand and internet have pushed communication to next level. The revolution made by technologies and internet have resulted in collection of large real-time data. Real-time data coming from transport camera's, mobile devices, social media's and other sources need to be dealt to provide easy decision making system for commuter in order to set a effective transportation system. According to \cite{bdtrans} "the volume and speed at which data are generated, processed and stored is unprecedented". Said that, Big data is all about realizing full potential and revealing hidden patterns of large data set by acquiring, storing and managing by advanced technologies and optimizing techniques. 
 
 The overwhelming real-time data collected from mobile devices and social media like Facebook, Twitter while travelling contains not only the location based information of the users but also the nature of traffic in hidden manner. These real-time data collected from social media applications and traffic camera can be used to predict the nature of road ahead, optimized route, traffic forecasting and predict them before they occur for the public by Intelligent Transportation system(ITS)\cite{its}. The nature of the data are in diverse manner ranging from structured to unstructured, as these are in real-time the consumed data size would be in terabytes. Because of the huge amount of big data and its nature there is a urgent need of addressing the issues like storing, managing and analyzing which are beyond the capacity of the traditional tools which are used for analysis.
 
@@ -63,14 +52,7 @@ Usually variety can be defined as mixture, when coming to data there will be str
 All data has hidden value, which must be revealed by employing range of technique's depending on the nature of value of the data. The technique's employed usually vary from the quantitative and investigative to discover the real value of the data ranging from expression of the consumers to financial status of the consumers.
 
 
-Big Data analytic techniques are applied on large data to generate knowledge and reveal hidden patterns which can be harnessed to make useful in customer point of view. Now a days, Big Data analytic are used in many areas like DNA analysis, machine learning, deep learning, robotics and data classification. Usually the Big Data process can be visualized as in the Figure~\ref{fig:BD}.
-
-
-\begin{figure}
-\includegraphics[width=1.0\columnwidth]{Capture1}
-\caption{Big Data Process \cite{bigdata}.}
-\label{fig:BD}
-\end{figure}
+Big Data analytic techniques are applied on large data to generate knowledge and reveal hidden patterns which can be harnessed to make useful in customer point of view. Now a days, Big Data analytic are used in many areas like DNA analysis, machine learning, deep learning, robotics and data classification.
 
 The Big Data process can be broken down to two major component, Data Management and Data Analytic. In Data management segment the large set of data are acquired and recorder as first step, later the data are extracted from the storage or recorded devices and cleansed and annotated to meta file in the case of the unstructured data like video, text and audio. After cleaning and annotation the data are aggregated and presented in order to extract useful information. The unstructured data aggregated and integrated in this step to represent it as a structured data. In the next step Big Data Analytic are employed on the aggregated data, the first step of the analytic is the creation of model to apply on the aggregated data to perform analysis to reveal hidden value and pattern. In the next step visualization of the hidden pattern in the data is done and then the pattern are interpreted to make useful decision making to make a effective system for the consumer needs.
  
@@ -88,7 +70,7 @@ These techniques extract structured meaning from the unstructured data. These te
 
 \subsubsection{Text Summarizing}
 
-As the name suggests these techniques create key points of single or multiple document in a succinct way. This analytic technique are employed in two ways, \say{Extractive Approach}\cite{bigdata} and \say{Abstractive approach} \cite{bigdata}. In the \say{Extractive Approach} summary is created from original statements and these summaries are subset of the original document by determining the salient points and putting them together. While the \say{Abstractive Approach} does the extraction of the semantic information from the text by employing Natural Language Processing techniques.
+As the name suggests these techniques create key points of single or multiple document in a succinct way. This analytic technique are employed in two ways, "Extractive Approach" \cite{bigdata} and "Abstractive approach" \cite{bigdata}. In the "Extractive Approach" summary is created from original statements and these summaries are subset of the original document by determining the salient points and putting them together. While the "Abstractive Approach" does the extraction of the semantic information from the text by employing Natural Language Processing techniques.
 
 \subsubsection{Questionnaire}
 
@@ -188,12 +170,13 @@ Sweden created a project based on IBM InfoS-phere \cite{bdlt} to improve the tra
 
 We came across what is big data and type of big data analytic employed based on different nature of data accumulated from different data sources and some of the existing transportation system employed in different countries using Big Data Analytic. Even-though there are good transportation system employed using Big Data Analytic, with the current advancement in integration and penetration of machine learning, artificial intelligence and Big Data Analytic tools like Apache Hadoop and Spark, an edge of the day Intelligent Transportation System can be developed to use in areas like congestion management, traffic routing and scheduling.
 
-\section*{Acknowledgements}
+\begin{acks}
 
 The author would like to thank Dr. Gregor von Laszewski and his teaching assistants for providing helpful feedback.
-
+\end{acks}
 
 \bibliographystyle{ACM-Reference-Format}
-\bibliography{report}
+\bibliography{report} 
+
 
 \end{document}
