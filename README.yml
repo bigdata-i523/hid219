@@ -43,7 +43,8 @@ paper2:
     author:
         - Syam Sundar Herle Parampali Sreenath
     hid:
-        - 100%
+        - 219
+    status: 100%
     chapter: Sentiment Analysis
     type: report
     url: https://github.com/bigdata-i523/hid219/blob/master/paper2/report.pdf
