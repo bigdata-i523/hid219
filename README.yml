@@ -31,12 +31,19 @@ paper1:
     type: latex
     url: 'https://github.com/bigdata-i523/hid219/blob/master/paper1/report.pdf'
 paper2:
-    review: Nov 20 2017
-    abstract: This paper showcases tis and that and the other
+    title: Big Data and Sentiment Analysis
+    review: Nov 17 2017
+    abstract: >
+    Opinion mining is an art of extracting opinions of author, speaker or writer 
+    from their written text or spoken words, opinion mining is done by employing 
+    Natural Language Processing ,text analysis, Artificial Intelligence. This paper
+    shows where the Big Data meets Sentiment Analysis and the issues related in using
+    Big Data in Sentiment Analysis. How the consumer needs and product evaluation is 
+    done while using Big Data in opinion mining. 
     author:
-        - Gregor von Laszewski
+        - Syam Sundar Herle Parampali Sreenath
     hid:
-        - 0
-    title: Benchmarking a BigData Docker deployment
+        - 100%
+    chapter: Sentiment Analysis
     type: report
     url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
