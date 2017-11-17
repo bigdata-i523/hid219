@@ -34,12 +34,12 @@ paper2:
     title: Big Data and Sentiment Analysis
     review: Nov 17 2017
     abstract: >
-    Opinion mining is an art of extracting opinions of author, speaker or writer 
-    from their written text or spoken words, opinion mining is done by employing 
-    Natural Language Processing ,text analysis, Artificial Intelligence. This paper
-    shows where the Big Data meets Sentiment Analysis and the issues related in using
-    Big Data in Sentiment Analysis. How the consumer needs and product evaluation is 
-    done while using Big Data in opinion mining. 
+        Opinion mining is an art of extracting opinions of author, speaker or writer 
+        from their written text or spoken words, opinion mining is done by employing 
+        Natural Language Processing ,text analysis, Artificial Intelligence. This paper
+        shows where the Big Data meets Sentiment Analysis and the issues related in using
+        Big Data in Sentiment Analysis. How the consumer needs and product evaluation is 
+        done while using Big Data in opinion mining. 
     author:
         - Syam Sundar Herle Parampali Sreenath
     hid:
@@ -48,3 +48,7 @@ paper2:
     chapter: Sentiment Analysis
     type: report
     url: https://github.com/bigdata-i523/hid219/blob/master/paper2/report.pdf
+Project:
+    Title: Fake Review Detection on Yelp Dataset
+    abstract: >
+            
