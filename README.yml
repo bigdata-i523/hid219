@@ -42,11 +42,11 @@ paper2:
         done while using Big Data in opinion mining. 
     author:
         - Syam Sundar Herle Parampali Sreenath
+    chapter: Business
     hid:
         - 219
     status: 100%
-    chapter: Sentiment Analysis
-    type: report
+    type: latex
     url: https://github.com/bigdata-i523/hid219/blob/master/paper2/report.pdf
 Project:
     Title: Fake Review Detection on Yelp Dataset
