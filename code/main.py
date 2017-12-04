@@ -18,14 +18,14 @@ class ReviewScore:
         self.path = path
     
     def readFile(self):
-        basePath = self.path+'/review/'
+        basePath = self.path+'/smallData/review/'
         subDir = [folder for folder in os.listdir(basePath) if not folder.startswith(".")]
         df= pd.DataFrame(columns=[])
         for num in range(len(subDir)):
             files =[f for f in os.listdir(basePath+subDir[num])]
             in_files=[]
             
-            reviewRating = CalculateReviewScore(os.getcwd()+'/rating/'+subDir[num]+'.txt')
+            reviewRating = CalculateReviewScore(os.getcwd()+'/smallData/rating/'+subDir[num]+'.txt')
             self.reviewArray = reviewRating.calulateRating()
             for file_num in range(len(files)):
                 with open(basePath+subDir[num]+'/'+files[file_num]) as f:
