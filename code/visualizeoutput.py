@@ -18,7 +18,7 @@ def plot():
     plt.title('opinion spammer')
     plt.ylabel('Review score')
     plt.xlabel('Rating Score')
-    plt.show()
+    plt.savefig('outputFig')
     
 def main():
     plot()
