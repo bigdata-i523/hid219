@@ -1,0 +1,7 @@
+Luxe Lounge_1:5
+Luxe Lounge_2:4
+Luxe Lounge_3:4
+Luxe Lounge_4:3
+Luxe Lounge_5:1
+Luxe Lounge_6:3
+Luxe Lounge_7:3

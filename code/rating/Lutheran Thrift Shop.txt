@@ -1,0 +1,6 @@
+Lutheran Thrift Shop_1:4
+Lutheran Thrift Shop_2:2
+Lutheran Thrift Shop_3:4
+Lutheran Thrift Shop_4:5
+Lutheran Thrift Shop_5:5
+Lutheran Thrift Shop_6:3

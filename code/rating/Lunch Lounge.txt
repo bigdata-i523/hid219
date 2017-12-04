@@ -1,0 +1,15 @@
+Lunch Lounge_1:4
+Lunch Lounge_2:5
+Lunch Lounge_3:3
+Lunch Lounge_4:5
+Lunch Lounge_5:5
+Lunch Lounge_6:2
+Lunch Lounge_7:5
+Lunch Lounge_8:5
+Lunch Lounge_9:5
+Lunch Lounge_10:5
+Lunch Lounge_11:5
+Lunch Lounge_12:1
+Lunch Lounge_13:4
+Lunch Lounge_14:4
+Lunch Lounge_15:4
