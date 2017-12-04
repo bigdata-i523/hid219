@@ -29,6 +29,27 @@ Nowadays decision making done by organization and individuals highly weighted on
 
 Usually the sentiment analysis can be defined as classifying a piece of written text into positive,negative or neutral state. This is also known as opinion analysis as it derives the opinion of the author. Said that, now a days, user's and consumers write reviews, opinions on online for a product or service given to them. The growth of web and internet has enabled user or consumers to communicate among each other and write up more reviews about products and has made the web more subjective and opinionated. As a result, huge amount of data in the form of texts are available from online which are rich in information, which are users review and opinion about products and service delivered to them. Which in turn can be used by the product owners to meet the consumer needs and demands, and provide quality products and identify the issues in products and much more. Unbiased and independent reviews about a product are the main decision making entity usually used by peoples while purchasing a product. 
 Opinion mining is usually employed for the knowledge retrieval from textual contents such as review and comments. Opinion mining results the the textual content in one of the three categories namely positive, negative and neutral. Positive opinion are good in yielding good financial gains and fame and good business for product owners. On the other hand negative reviews helps in identifying the issues of the products, having said that some people usually write fake reviews to boost their financial gain or discredit their competitive product. These type of reviews are known as opinion spammers. In the following we will learn about sentiment analysis in detail and we will walk through some of the achievement done in detecting fake review and opinion spammers and we will propose our unsupervised learning model.
+\section{Overview Of Big Data}
+"Big Data describes a holistic information management strategy that includes and integrates many new types of data and data management alongside traditional data. 
+
+While many of the techniques to process and analyze these data types have existed for some time, it has been the massive proliferation of data and the lower cost computing models that have encouraged broader adoption" \cite{bigdatadef}. Usually Big Data is comprised of four V's as said in \cite{bigdatadef} which is as follows,
+\subsection{Volume}
+Volume refers to the amount of data which are processed and stored, big data usually comprises of the high volume of low-level data which are granular in nature.
+
+Real-time data captured from CCTV, internet live feed are so dense and has high volume, big data technologies allows user to convert these low-level high volume to high-level density data.
+\subsection{Velocity}
+The speed at which data captured can be defined here. As said in earlier sub-section data acquired from live feed CCTV are real-time in nature so the speed at which data are transmitted to the target storage also plays major role. Big Data requires processing and storage units to keep with the speed of the data being accumulated.
+Traditional data storage cannot be used to handle Big Data. Big Data technology like Hadoop are required to store data.
+\subsection{Variety}
+The real nature or raw nature of the Big Data ranges from structured, semi-structured and unstructured. As the technology have grown, many unstructured data are being captured from social media, internet. Audio and Video files comprises to the most of the unstructured data. Big Data technologies are needed to convert these unstructured to structured data and process it. 
+\subsection{Value}
+According to \cite{bigdatadef} Data has intrinsic value, which are quantitative and textual in nature. Appropriate investigation method needed to derive the real value of the data to reveal the knowledge encapsulated in data which ranges from discovering a consumer preference or sentiment, to making a relevant offer by location, or for identifying a piece of equipment that is about to fail. The technological breakthrough is that the cost of data storage and compute has exponentially decreased, thus providing an abundance of data from which statistical sampling and other techniques become relevant, and meaning can be derived.
+
+\section{Overview of Big Data Analytic}
+
+Big Data analytic techniques are applied on large data to generate knowledge and reveal hidden patterns which can be harnessed to make useful in customer point of view. Now a days, Big Data analytic are used in many areas like DNA analysis, machine learning, deep learning, robotics and data classification.
+
+The Big Data process can be broken down to two major component, Data Management and Data Analytic. In Data management segment the large set of data are acquired and recorder as first step, later the data are extracted from the storage or recorded devices and cleansed and annotated to meta file in the case of the unstructured data like video, text and audio. After cleaning and annotation the data are aggregated and presented in order to extract useful information. The unstructured data aggregated and integrated in this step to represent it as a structured data. In the next step Big Data Analytic are employed on the aggregated data, the first step of the analytic is the creation of model to apply on the aggregated data to perform analysis to reveal hidden value and pattern. In the next step visualization of the hidden pattern in the data is done and then the pattern are interpreted to make useful decision making to make a effective system for the consumer needs.
 
 \section{Overview of Sentiment Analysis}
 
@@ -116,14 +137,60 @@ The main goal of our proposed work is to detect opinion spammers, if we are goin
 As there is a scarcity of labeled data set available for reviews, we will propose a novel unsupervised learning to detect fake review on the non-labeled data set using cosine similarity approach. In this section we will explain more about the data and feature generation technique which was employed and about main algorithm of the proposed work.
 
 \subsection{Data}
-For the proposed work we have used data from the Yelp Dataset Challenge which includes data from the Phoenix, Las Vegas, Madison, Waterloo and Edinburgh, with 42,153 businesses and 1,125,458 reviews. Yelp uses its own filtering algorithm to remove fake data set, but we will try to examine the effectiveness of their algorithm by our proposed novel method.
+For the proposed work we have used data from the Yelp Dataset Challenge which includes data from the Phoenix, Las Vegas, Madison, Waterloo and Edinburgh, with 42,153 businesses and 1,125,458 reviews. Yelp uses its own filtering algorithm to remove fake data set, but we will try to examine the effectiveness of their algorithm by our proposed novel method. The data is rich information and we have handle the data to process the data. The Yelp Dataset Challenge comprises of lot of data but we will be using two json files of the data, 'business.json' and 'review.json'.  From \cite{yelpdatasetchalleng} we can see the description of the data set, the 'business.json' file has all the information about the hotel like name, business id, address and so more. Whereas the file 'user.json' has all the information about the user like review,user id, business id, stars, rating and lot more.
+\begin{figure}
+  \centering\includegraphics[width=\columnwidth,height=\linewidth]{project/images/Capture.png}
+  \caption{System Architecture}\label{f:archi}
+\end{figure}
 
+From the architecture detailed in \ref{f:archi}, we can see that the input data is formatted to create a feature data set which can be used by the main algorithm later on.
 
+\subsection{Feature Selection}
 
+For the feature selection of our work we will employ a novel approach of using Spark in python 2.7 and we will extract features needed for the model from the data set. First a dictionary for business id are created along with the business name from the 'business.json' file by iterating through all the rows of 'business.json' file. There may be some duplicates among the business id, so creating a dictionary will eliminate the probability of including the same encrypted business id again and again.
 
+In the next step we have to iterate through all the rows of the 'user.json' file to grab the user review and rating along with the encrypted business id to which the user have given the rating and review. The very next step will be mapping the review and rating for the encrypted business id by looking up the encrypted business id of the dictionary file created in step one. We will create a folder named as business name and we store the reviews for the business name as individual text files and we will create a file with the name of business name having all the reviews for that business. 
+
+After completing this steps we will try to dump all the review files and rating files in rating and review main folders.
+
+\subsection{Idea behind Algorithm}
+
+The main algorithm or unsupervised learning model which we are going to use in our work is a cosine similarity. Assume if we have a data of a hotel delivering continental food and if a reviewer is writing 'The wine brewed and delivered in this place is so good', this gives us a suspicious as the place which is good for continental food but a reviewer has written about brewing and delivering of wine in a positive polarity. If this reviews cosine similarity is calculated with respect to other it will come in the range of 0.028 where other reviews will be in the range from 0.1 to 1. And the low cosine value is reinforcing our assumption that low cosine value will make it fall into category of opinionated spam or fake review.
+
+\subsection{Unsupervised Learning Model}
+
+The main unsupervised learning model or unsupervised algorithm we will be using is cosine similarity of reviews among them. Let us first give basic notation and mathematical expression involved in developing our unsupervised learning model.
+
+\begin{itemize}
+    \item Let \(r_1,r_2,.,r_n\) be n rating of user n for a specific business with the maximum rating of 5.
+    \item Let \(N\) be the total number of users.
+    \item Let the cosine similarity of the reviews of user n among other user reviews be \(c_1,c_2,..,c_n\).
+\end{itemize}
+
+The mathematical function for calculating the rating similarity is given by,
+\begin{equation}
+    r_{Sim_{n}} = \frac{\sum_{i=0,k=0,i!=k}^{N}(r_i*r_k)/5}{N} \in [0,1]
+\end{equation}
+
+The mathematical for calculating the average cosine similarity is given by as follows,
+\begin{equation}
+    c_{Sim_n} = \frac{\sum_{i=0,k=0,i!=k}^{N}(c_i*c_k)}{\sqrt{\sum_{i=0}^{N}c_i^2}* \sum_{k=0}^{N}c_k^2} \in [0,1]
+\end{equation}
+
+The average cosine similarity gives the average cosine value of all reviews with respect to other reviews in specific business. The cosine similarity will be in the range of 0 to 1 and cosine similarity which are low are considered to be fake or opinionated spam for that specific business. The rating similarity is calculated because this gives us the expression of the reviewer for that specific business and we can find the specific review and rating is opinionated based on the average value of cosine and the rating similarity score.
+
+\subsection{Results}
+
+From the calculated average cosine and rating similarity values we can plot a 2-D plot to showcase our results as shown in \ref{f:op}
+
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{project/images/sample.png}
+  \caption{Result}\label{f:op}
+\end{figure}
+From the 2-D plot \ref{f:op} we can see highlighted scatter points which have low cosine similarity values and those are the fake reviews. From our noble unsupervised learning we were able to detect 10 fake reviews out of 1000 reviews from the filtered yelp data set.
 
 \section{CONCLUSION}
-Although still in its infancy, blockchain has the potential to be just as transformative as TCP/IP. Early and potential applications in healthcare and supply chain suggest that blockchain is indeed moving along the path of technology adoption. Because blockchain is a low-cost solution for supply chain management and provides security and transparency, it can be used for digital data and communication to overall the distribution of controlled substances such as opioids but this model has yet to be tested. But the computation and infrastructure cost for the entire model is low and should be tested to develop a proof of concept system that leverages blockchain to more securely distribute prescription opioids. A prototype model of blockchain can be developed which emulates the current structure of a pharmaceutical supply chain. Such a model can be vital to test out the flaws of blockchain and how to accurately tailor it to the specific use case.  
+  
 
 \begin{acks}
 The authors would like to thank Dr. Gregor von Laszewski for his support and suggestions to write this paper.
