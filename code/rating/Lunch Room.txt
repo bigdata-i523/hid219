@@ -1,6 +1,0 @@
-Lunch Room_1:4
-Lunch Room_2:5
-Lunch Room_3:5
-Lunch Room_4:1
-Lunch Room_5:4
-Lunch Room_6:5
