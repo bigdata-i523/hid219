@@ -1,5 +1,0 @@
-Lux Transportation_1:5
-Lux Transportation_2:5
-Lux Transportation_3:5
-Lux Transportation_4:5
-Lux Transportation_5:5
