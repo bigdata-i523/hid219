@@ -46,24 +46,24 @@ class Preprocess:
     def dumpData(self,row):
         
         
-        if not os.path.exists('reviews_model'):
-        	os.makedirs('reviews_model')
+        if not os.path.exists('review'):
+        	os.makedirs('review')
         
-        if not os.path.exists('ratings_model'):
-        	os.makedirs('ratings_model')   
+        if not os.path.exists('rating'):
+        	os.makedirs('rating')   
         
         review_file = self.businessName + '_' + str(self.reviewDict[self.businessName]) + '.txt'
     	
         
     
-        if not os.path.exists('reviews_model/' + self.formatString(self.businessName)):
-            os.makedirs('reviews_model/' + self.formatString(self.businessName))
+        if not os.path.exists('review/' + self.formatString(self.businessName)):
+            os.makedirs('review/' + self.formatString(self.businessName))
     	
-        reviewOutput = open('reviews_model/' + self.formatString(self.businessName) + '/' + self.formatString(review_file), 'w')
+        reviewOutput = open('review/' + self.formatString(self.businessName) + '/' + self.formatString(review_file), 'w')
         reviewOutput.write(row['text'].encode('utf8'))
         reviewOutput.close()
     
-        ratingWriteBuffer = open('ratings_model/' + self.formatString(self.businessName) + '.txt', 'a')
+        ratingWriteBuffer = open('rating/' + self.formatString(self.businessName) + '.txt', 'a')
         ratingstring = self.businessName + '_' + str(self.reviewDict[self.businessName]) + ':' + str(row["stars"]) + '\n' 
         
         ratingWriteBuffer.write(ratingstring.encode('utf8'))
@@ -76,12 +76,12 @@ class Preprocess:
 ################################################
 def main():
     try:
-        shutil.rmtree('reviews_model')
+        shutil.rmtree('review')
     except:
         pass
     
     try:
-        shutil.rmtree('ratings_model')
+        shutil.rmtree('rating')
     except:
         pass
     os.system('clear')
