@@ -213,10 +213,21 @@ From the calculated average cosine and rating similarity values we can plot a 2-
   \centering\includegraphics[width=\columnwidth]{project/images/sample.png}
   \caption{Result}\label{f:op}
 \end{figure}
-From the 2-D plot \ref{f:op} we can see highlighted scatter points which have low cosine similarity values and those are the fake reviews. From our noble unsupervised learning we were able to detect 10 fake reviews out of 1000 reviews from the filtered yelp data set.
+From the 2-D plot \ref{f:op} we can see highlighted black oval shape on the scatter points which have low cosine similarity values and those are the fake reviews. From our noble unsupervised learning we were able to detect 10 fake reviews out of 1000 reviews from the filtered yelp data set.
 
+\subsection{Information about machine environment}
+The unsupervised learning model was executed on the local machine Virtual-Machine of Ubuntu 16.04 operating system having 2 GB RAM and Intel i7 processor. The model was also executed on Chameleon cloud of Ubuntu 16.04 and 2 gb ram, using one node.
 
+\begin{figure}[!ht]
+  \centering\includegraphics[width=\columnwidth]{project/images/chamcloud.png}
+  \caption{Execution of model on Chameleon Cloud}\label{f:chameleon}
+\end{figure}
+
+From the figure \ref{f:chameleon} we can see the execution of the unsupervised learning model on chameleon.
+
+Furthermore the model was also executed on bigred2.
 \section{CONCLUSION}
+
 We came across about Big Data and Big Data analytic in detail and we also came across about sentiment analysis in detail. Further we saw some of the related works of fake review detection using supervised learning, semi-supervised learning and unsupervised learning. We proposed a novel unsupervised learning model which works on cosine similarity and we were able to detect some of the fake reviews like 10 out of 1000 in the filtered Yelp Dataset Challenge. 
 
 \begin{acks}
