@@ -14,7 +14,7 @@
   \postcode{47408}
   \country{USA}}
 \email{syampara@iu.edu}
-
+\bibliographystyle{ACM-Reference-Format}
 
 \begin{abstract}
 Nowadays decision making done by organization and individuals highly weighted on online reviews, social media opinions of any product or services. There is lot of valuable information available online, on which if proper mining technique is used we can reveal hidden values which are way useful to day to day life decision making. Given the usefulness of online data, individuals and group of people have started to take advantage of those data to boost up their business or products or creating an biased competition in market and this type of individuals and group of people create an opinion spamming system. Opinionated spamming are spams created by spammers to benefit their business fame or profit by giving biased reviews of product or service. Mechanism to detect these spammers or spam created by these spammers is an urgent need as we our technology has raised to new standard and raise in the rate of accessibility to online due to available technology. Here we are going to propose a such mechanism to detect fake review with help of an unsupervised machine learning model, which is trained using opinion mining of Natural Language Processing (NLP). Opinion mining is an art of extracting opinions of author, speaker or writer from their written text or spoken words, opinion mining is done by employing Natural Language Processing ,text analysis, Artificial Intelligence. 
@@ -163,7 +163,7 @@ As there is a scarcity of labeled data set available for reviews, we will propos
 \subsection{Data}
 For the proposed work we have used data from the Yelp Dataset Challenge which includes data from the Phoenix, Las Vegas, Madison, Waterloo and Edinburgh, with 42,153 businesses and 1,125,458 reviews. Yelp uses its own filtering algorithm to remove fake data set, but we will try to examine the effectiveness of their algorithm by our proposed novel method. The data is rich information and we have handle the data to process the data. The Yelp Dataset Challenge comprises of lot of data but we will be using two json files of the data, 'business.json' and 'review.json'.  From \cite{yelpdatasetchalleng} we can see the description of the data set, the 'business.json' file has all the information about the hotel like name, business id, address and so more. Whereas the file 'user.json' has all the information about the user like review,user id, business id, stars, rating and lot more.
 \begin{figure}
-  \centering\includegraphics[width=\columnwidth,height=\linewidth]{project/images/Capture.png}
+  \centering\includegraphics[width=\columnwidth,height=\linewidth]{images/Capture.png}
   \caption{System Architecture}\label{f:archi}
 \end{figure}
 
@@ -210,7 +210,7 @@ The average cosine similarity gives the average cosine value of all reviews with
 From the calculated average cosine and rating similarity values we can plot a 2-D plot to showcase our results as shown in \ref{f:op}
 
 \begin{figure}[!ht]
-  \centering\includegraphics[width=\columnwidth]{project/images/sample.png}
+  \centering\includegraphics[width=\columnwidth]{images/sample.png}
   \caption{Result}\label{f:op}
 \end{figure}
 From the 2-D plot \ref{f:op} we can see highlighted black oval shape on the scatter points which have low cosine similarity values and those are the fake reviews. From our noble unsupervised learning we were able to detect 10 fake reviews out of 1000 reviews from the filtered yelp data set.
@@ -219,7 +219,7 @@ From the 2-D plot \ref{f:op} we can see highlighted black oval shape on the scat
 The unsupervised learning model was executed on the local machine Virtual-Machine of Ubuntu 16.04 operating system having 2 GB RAM and Intel i7 processor. The model was also executed on Chameleon cloud of Ubuntu 16.04 and 2 gb ram, using one node.
 
 \begin{figure}[!ht]
-  \centering\includegraphics[width=\columnwidth]{project/images/chamcloud.png}
+  \centering\includegraphics[width=\columnwidth]{images/chamcloud.png}
   \caption{Execution of model on Chameleon Cloud}\label{f:chameleon}
 \end{figure}
 
@@ -234,8 +234,9 @@ We came across about Big Data and Big Data analytic in detail and we also came a
 The authors would like to thank Dr. Gregor von Laszewski for his support and suggestions to write this paper.
 \end{acks}
 
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{report} 
+
+
+\bibliography{report}  
 
 \appendix
 
