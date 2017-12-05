@@ -173,9 +173,11 @@ From the architecture detailed in \ref{f:archi}, we can see that the input data 
 
 For the feature selection of our work we will employ a novel approach of using Spark in python 2.7 and we will extract features needed for the model from the data set. First a dictionary for business id are created along with the business name from the 'business.json' file by iterating through all the rows of 'business.json' file. There may be some duplicates among the business id, so creating a dictionary will eliminate the probability of including the same encrypted business id again and again.
 
-In the next step we have to iterate through all the rows of the 'user.json' file to grab the user review and rating along with the encrypted business id to which the user have given the rating and review. The very next step will be mapping the review and rating for the encrypted business id by looking up the encrypted business id of the dictionary file created in step one. We will create a folder named as business name and we store the reviews for the business name as individual text files and we will create a file with the name of business name having all the reviews for that business. 
+In the next step we have to iterate through all the rows of the 'user.json' file to grab the user review and rating along with the encrypted business id to which the user have given the rating and review. The very next step will be mapping the review and rating for the encrypted business id by looking up the encrypted business id of the dictionary file created in step one. We will create a folder named as business name and we store the reviews for the business name as individual text files and we will create a file with the name of business name having all the reviews for that business.
 
 After completing this steps we will try to dump all the review files and rating files in rating and review main folders.
+
+Now we have to form a word vector for each read file from review folder, iterate through business folder and read two text files and create two word vector for both files, after creating word vector along with the frequency for the words which are unique on both text files.  
 
 \subsection{Idea behind Algorithm}
 
@@ -183,7 +185,7 @@ The main algorithm or unsupervised learning model which we are going to use in o
 
 \subsection{Unsupervised Learning Model}
 
-The main unsupervised learning model or unsupervised algorithm we will be using is cosine similarity of reviews among them. Let us first give basic notation and mathematical expression involved in developing our unsupervised learning model.
+The main unsupervised learning model or unsupervised algorithm we will be using is cosine similarity of reviews among them. The word vector of review file is taken as input to calculate the cosine similarithy. Let us first give basic notation and mathematical expression involved in developing our unsupervised learning model.
 
 \begin{itemize}
     \item Let \(r_1,r_2,.,r_n\) be n rating of user n for a specific business with the maximum rating of 5.
