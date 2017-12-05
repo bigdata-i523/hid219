@@ -1,4 +1,4 @@
-# Running Project Code on Local Machine
+## Running project code on Local Machine
 
 git clone <https link to 219>
 
@@ -11,10 +11,20 @@ execute following command on ubuntu by going to hid219/project/doce
 ```ubuntu 
 tar -xvf file.tar
 ```
-install pandas using pip
+Install pandas using pip
 
 ```python
 pip install pandas
 ```
-Run main.py
+Execute main.py in IDE or with following command for ubuntu
+
+```ubuntu
+python main.py
+```
+
+## Running project code on chameleon
+
+
+
+
 
