@@ -49,16 +49,30 @@ paper2:
     type: latex
     url: https://github.com/bigdata-i523/hid219/blob/master/paper2/report.pdf
 project:
+    title: Unsupervised Learning for detecting fake online reviews
     review: Dec 4 2017
     author:
-        - Gregor von Laszewski
+        - Syam Sundar Herle
     hid:
         - 219
-    title: Fake Review Detection on Yelp Dataset
     abstract: >
-        We showcase tis and that and the other
-        and another line.
-    url: https://github.com/bigdata-i523/sample-hid000/project/
+        Nowadays decision making done by organization and individuals highly weighted on online 
+        reviews, social media opinions of any product or services. There is lot of valuable 
+        information available online, on which if proper mining technique is used we can reveal
+        hidden values which are way useful to day to day life decision making. Given the usefulness
+        of online data, individuals and group of people have started to take advantage of those data
+        to boost up their business or products or creating an biased competition in market and this 
+        type of individuals and group of people create an opinion spamming system. Opinionated spamming 
+        are spams created by spammers to benefit their business fame or profit by giving biased reviews 
+        of product or service. Mechanism to detect these spammers or spam created by these spammers is 
+        an urgent need as we our technology has raised to new standard and raise in the rate of accessibility 
+        to online due to available technology. Here we are going to propose a such mechanism to detect 
+        fake review with help of an unsupervised machine learning model, which is trained using opinion 
+        mining of Natural Language Processing (NLP). Opinion mining is an art of extracting opinions 
+        of author, speaker or writer from their written text or spoken words, opinion mining is done by 
+        employing Natural Language Processing ,text analysis, Artificial Intelligence. 
+
+    url: https://github.com/bigdata-i523/hid219/tree/master/project
     type: project
-    status: Dec 04 17 0%
-chapter: TBD
+    status: Dec 04 17 100%
+    chapter: opinon Mining
