@@ -171,9 +171,9 @@ From the architecture detailed in \ref{f:archi}, we can see that the input data 
 
 \subsection{Feature Selection}
 
-For the feature selection of our work we will employ a novel approach of using Spark in python 2.7 and we will extract features needed for the model from the data set. First a dictionary for business id are created along with the business name from the 'business.json' file by iterating through all the rows of 'business.json' file. There may be some duplicates among the business id, so creating a dictionary will eliminate the probability of including the same encrypted business id again and again.
+For the feature selection of our work we will employ cosine similarity method using Spark in python 2.7 and we will extract features needed for the model from the data set. As in \cite{originalPaper} we will create a dictionary for business id are created along with the business name from the 'business.json' file by iterating through all the rows of 'business.json' file. There may be some duplicates among the business id, so creating a dictionary will eliminate the probability of including the same encrypted business id again and again.
 
-In the next step we have to iterate through all the rows of the 'user.json' file to grab the user review and rating along with the encrypted business id to which the user have given the rating and review. The very next step will be mapping the review and rating for the encrypted business id by looking up the encrypted business id of the dictionary file created in step one. We will create a folder named as business name and we store the reviews for the business name as individual text files and we will create a file with the name of business name having all the reviews for that business.
+In the next step as in \cite{originalPaper} we have to iterate through all the rows of the 'user.json' file to grab the user review and rating along with the encrypted business id to which the user have given the rating and review. The very next step will be mapping the review and rating for the encrypted business id by looking up the encrypted business id of the dictionary file created in step one. We will create a folder named as business name and we store the reviews for the business name as individual text files and we will create a file with the name of business name having all the reviews for that business.
 
 After completing this steps we will try to dump all the review files and rating files in rating and review main folders.
 
@@ -181,7 +181,7 @@ Now we have to form a word vector for each read file from review folder, iterate
 
 \subsection{Idea behind Algorithm}
 
-The main algorithm or unsupervised learning model which we are going to use in our work is a cosine similarity. Assume if we have a data of a hotel delivering continental food and if a reviewer is writing 'The wine brewed and delivered in this place is so good', this gives us a suspicious as the place which is good for continental food but a reviewer has written about brewing and delivering of wine in a positive polarity. If this reviews cosine similarity is calculated with respect to other it will come in the range of 0.028 where other reviews will be in the range from 0.1 to 1. And the low cosine value is reinforcing our assumption that low cosine value will make it fall into category of opinionated spam or fake review.
+The main algorithm or unsupervised learning model which we are going to use in our work is proposed in \cite{originalPaper}, a cosine similarity. Assume if we have a data of a hotel delivering continental food and if a reviewer is writing 'The wine brewed and delivered in this place is so good', this gives us a suspicious as the place which is good for continental food but a reviewer has written about brewing and delivering of wine in a positive polarity. If this reviews cosine similarity is calculated with respect to other it will come in the range of 0.028 where other reviews will be in the range from 0.1 to 1. And the low cosine value is reinforcing our assumption that low cosine value will make it fall into category of opinionated spam or fake review.
 
 \subsection{Unsupervised Learning Model}
 
@@ -193,7 +193,7 @@ The main unsupervised learning model or unsupervised algorithm we will be using 
     \item Let the cosine similarity of the reviews of user n among other user reviews be \(c_1,c_2,..,c_n\).
 \end{itemize}
 
-The mathematical function for calculating the rating similarity is given by,
+The mathematical function for calculating the rating similarity as given in \cite{originalPaper},
 \begin{equation}
     r_{Sim_{n}} = \frac{\sum_{i=0,k=0,i!=k}^{N}(r_i*r_k)/5}{N} \in [0,1]
 \end{equation}
