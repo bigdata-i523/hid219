@@ -1,6 +1,6 @@
 \documentclass[sigconf]{acmart}
 
-\input{format/i523}
+\input{format/final.tex}
 
 \begin{document}
 \title{Unsupervised Learning For Detecting Fake Online Reviews}
@@ -158,13 +158,13 @@ For spotting fake reviews via collective positive-unlabeled learning \cite{70234
 \section{Proposed Work}
 The main goal of our proposed work is to detect opinion spammers, if we are going to employ a supervised learning as discussed in related work section we will be needing a labeled data set. But most of the data sources available on online are unstructured data without any labels for the fake reviews, in \cite{8026958} they used duplicate review as ground truth for classifying the fake reviews but the accuracy of proposed system in \cite{8026958} will be very low. If we want to create a labeled data set then we have to create a labeled data set Amazon Mechanical Trunk \cite{6681365} or segregate opinion groups manually. Even though both the process of creating labeled data set are easy to implement, they have their own disadvantages. Both mentioned process are expensive and industrious to implement. 
 
-As there is a scarcity of labeled data set available for reviews, we will propose a novel unsupervised learning to detect fake review on the non-labeled data set using cosine similarity approach. In this section we will explain more about the data and feature generation technique which was employed and about main algorithm of the proposed work.
+As there is a scarcity of labeled data set available for reviews, we will create an unsupervised learning as proposed in \cite{originalPaper} to detect fake review on the non-labeled data set using cosine similarity approach. In this section we will explain more about the data and feature generation technique which was employed and about main algorithm.
 
 \subsection{Data}
 For the proposed work we have used data from the Yelp Dataset Challenge which includes data from the Phoenix, Las Vegas, Madison, Waterloo and Edinburgh, with 42,153 businesses and 1,125,458 reviews. Yelp uses its own filtering algorithm to remove fake data set, but we will try to examine the effectiveness of their algorithm by our proposed novel method. The data is rich information and we have handle the data to process the data. The Yelp Dataset Challenge comprises of lot of data but we will be using two json files of the data, 'business.json' and 'review.json'.  From \cite{yelpdatasetchalleng} we can see the description of the data set, the 'business.json' file has all the information about the hotel like name, business id, address and so more. Whereas the file 'user.json' has all the information about the user like review,user id, business id, stars, rating and lot more.
 \begin{figure}
   \centering\includegraphics[scale=1.0]{images/Capture.png}
-  \caption{System Architecture}\label{f:archi}
+  \caption{System Architecture \cite{originalPaper}}\label{f:archi}
 \end{figure}
 
 From the architecture detailed in \ref{f:archi}, we can see that the input data is formatted to create a feature data set which can be used by the main algorithm later on.
@@ -185,7 +185,7 @@ The main algorithm or unsupervised learning model which we are going to use in o
 
 \subsection{Unsupervised Learning Model}
 
-The main unsupervised learning model or unsupervised algorithm we will be using is cosine similarity of reviews among them. The word vector of review file is taken as input to calculate the cosine similarithy. Let us first give basic notation and mathematical expression involved in developing our unsupervised learning model.
+The main unsupervised learning model or unsupervised algorithm we will be using is cosine similarity of reviews among them. As in \cite{originalPaper} the word vector of review file is taken as input to calculate the cosine similarity. Let us first give basic notation and mathematical expression involved in developing our unsupervised learning model.
 
 \begin{itemize}
     \item Let \(r_1,r_2,.,r_n\) be n rating of user n for a specific business with the maximum rating of 5.
@@ -211,7 +211,7 @@ From the calculated average cosine and rating similarity values we can plot a 2-
 
 \begin{figure}[!ht]
   \centering\includegraphics[width=\columnwidth]{images/sample.png}
-  \caption{Result}\label{f:op}
+  \caption{Result \cite{originalPaper}.}\label{f:op}
 \end{figure}
 From the 2-D plot \ref{f:op} we can see highlighted black oval shape on the scatter points which have low cosine similarity values and those are the fake reviews. From our noble unsupervised learning we were able to detect 10 fake reviews out of 1000 reviews from the filtered yelp data set.
 
@@ -228,7 +228,7 @@ From the figure \ref{f:chameleon} we can see the execution of the unsupervised l
 Furthermore the model was also executed on bigred2.
 \section{CONCLUSION}
 
-We came across about Big Data and Big Data analytic in detail and we also came across about sentiment analysis in detail. Further we saw some of the related works of fake review detection using supervised learning, semi-supervised learning and unsupervised learning. We proposed a novel unsupervised learning model which works on cosine similarity and we were able to detect some of the fake reviews like 10 out of 1000 in the filtered Yelp Dataset Challenge. 
+We came across about Big Data and Big Data analytic in detail and we also came across about sentiment analysis in detail. Further we saw some of the related works of fake review detection using supervised learning, semi-supervised learning and unsupervised learning. We did an unsupervised learning model which works on cosine similarity as proposed in \cite{originalPaper} and we were able to detect some of the fake reviews like 10 out of 1000 in the filtered Yelp Dataset Challenge. 
 
 
 
